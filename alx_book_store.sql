@@ -46,6 +46,5 @@ CREATE TABLE Order_Details (
         REFERENCES Orders(order_id)
         ON DELETE CASCADE,
     CONSTRAINT fk_orderdetails_book
-        FOREIGN KEY (book_id)
-        REFERENCES Books(book_id)
+        FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
